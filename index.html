@@ -1,178 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Pricing Website</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-	  
-    }
-
-    header, footer {
-      background-color: #333;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-    }
-
-    nav {
-      display: flex;
-      justify-content: space-around;
-      background-color:red;
-      padding: 1rem;
-    }
-
-    section {
-      padding: 2rem;
-    }
-    .pricing {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      background-color: #fff;
-      padding: 20px;
-      border-radius: 10px;
-	  margin-left:10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-    .toggle-container {
-      margin-bottom: 20px;
-    }
-	#b{
-	display:flex;
-	
-	}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+        #head{
+            display: flex;
+            justify-content: space-around;
+            background-color: aqua;
+            border: 10px;
+            width: 100%;
+            border-radius: 10px;
+        }
+        a{
+            justify-content: space-around;
+            text-decoration: none;
+        }
+        #con{
+            margin-right:50px;
+        }
+        #dis {
+            display: flex; 
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        img {
+            width: 600px;
+            height: auto;
+        }
+        @media (max-width: 880px) {
+            #dis img {
+                display: none;
+            }
+            #dis1{
+                display: flex; 
+                flex-direction: column;
+                justify-content:center;
+                align-items: center;
+                
+                height: 500px;
+                
+            }
+        }
+    </style>
 </head>
 <body>
-
-  <header>
-    <h1>Pricing Land</h1>
-  </header>
-
-  <nav>
-    <a href="#home">Home</a>
-    
-    <a href="#b">Price</a>
-    <a href="#contact">Contact</a>
-    <a href="#login">Login</a>
-  </nav>
-  <section id="section">
-    tcyfuyuhyuhy
-    gchhvvhjhbk
-    yfugg
-    Pollution is the introduction of contaminants into the natural environment that cause adverse change.[1] Pollution can take the form of any substance (solid, liquid, or gas) or energy (such as radioactivity, heat, sound, or light). Pollutants, the components of pollution, can be either foreign substances/energies or naturally occurring contaminants.
-
-Although environmental pollution can be caused by natural events, the word pollution generally implies that the contaminants have an anthropogenic source – that is, a source created by human activities, such as manufacturing, extractive industries, poor waste management, transportation or agriculture. Pollution is often classed as point source (coming from a highly concentrated specific site, such as a factory or mine) or nonpoint source pollution (coming from a widespread distributed sources, such as microplastics or agricultural runoff).
-
-Many sources of pollution were unregulated parts of industrialization during the 19th and 20th centuries until the emergence of environmental regulation and pollution policy in the later half of the 20th century. Sites where historically polluting industries released persistent pollutants may have legacy pollution long after the source of the pollution is stopped. Major forms of pollution include air pollution, light pollution, litter, noise pollution, plastic pollution, soil contamination, radioactive contamination, thermal pollution, visual pollution, and water pollution.
-
-Pollution has widespread consequences on human and environmental health, having systematic impact on social and economic systems. In 2019, pollution killed nine million people worldwide (one in six deaths), a number unchanged since 2015.[2][3][4] Air pollution accounted for 3⁄4 of these earlier deaths.[5][6] A 2022 literature review found that levels of anthropogenic chemical pollution have exceeded planetary boundaries and now threaten entire ecosystems around the world.[7][8] Pollutants frequently have outsized impacts on vulnerable populations, such as children and the elderly, and marginalized communities, because polluting industries and toxic waste sites tend to be collocated with populations with less economic and political power.[9] This outsized impact is a core reason for the formation of the environmental justice movement,[10][11] and continues to be a core element of environmental conflicts, particularly in the Global South.
-
-Because of the impacts of these chemicals, local, country and international policy have increasingly sought to regulate pollutants, resulting in increasing air and water quality standards, alongside regulation of specific waste streams. Regional and national policy is typically supervised by environmental agencies or ministries, while international efforts are coordinated by the UN Environmental Program and other treaty bodies. Pollution mitigation is an important part of all of the Sustainable Development Goals.[1
-  </section>
-  <div id="b">
-  <div class="pricing">
-    <h2>Product Pricing 1</h2>
-    
-    <div id="priceContainer1">
-      <!-- Pricing content will be dynamically added here -->
+    <div id="head">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="resume.html">Resume</a>
+        <a href="project.html">Projects</a>
+        <a href="contact.html" id="con">Contact</a>
     </div>
-  </div>
-
-  <div class="pricing">
-    <h2>Product Pricing 2</h2>
-    
-    <div id="priceContainer2">
-      <!-- Pricing content will be dynamically added here -->
+    <div id="dis">
+            <img src="dubai.jpg" />
+        <div id="dis1">
+            <h1 style="margin-right: 30px;">POTTURI SRIRAM</h1><br>               
+            <h2 style="margin-right: 30px;">I'm a passionate <span style="border-bottom: 2px solid greenyellow;">Engineering Student </span>from India</h2>
+        </div>
     </div>
-  </div>
-  <div class="pricing">
-    <h2>Product Pricing 3</h2>
-    
-    <div id="priceContainer3">
-      <!-- Pricing content will be dynamically added here -->
-    </div>
-  </div>
-  <div class="pricing">
-    <h2>Product Pricing 4</h2>
-    
-    <div id="priceContainer4">
-      <!-- Pricing content will be dynamically added here -->
-    </div>
-  </div>
- 
-</div>
-  <div class="toggle-container">
-    <label id ="cur" for="currencyToggle">Toggle Currency:</label>
-    <input type="checkbox" id="currencyToggle" onchange="toggleCurrency()">
-  </div>
-      
-   
-
-  <script>
-    const pricingData1 = [
-      { plan: 'Basic', dollars: 5, rupees: 420 },
-      { plan: 'Standard', dollars: 6.5, rupees: 545 },
-      { plan: 'Premium', dollars: 8, rupees: 665 },
-      { plan: 'Pro', dollars: 10, rupees: 850 },
-      { plan: 'Enterprise', dollars: 12, rupees: 1000 },
-    ];
-    const pricingData2 = [
-      { plan: 'Basic', dollars: 6, rupees: 500 },
-      { plan: 'Standard', dollars: 8, rupees: 665 },
-      { plan: 'Premium', dollars: 10, rupees: 835 },
-      { plan: 'Pro', dollars: 12, rupees: 1000 },
-      { plan: 'Enterprise', dollars: 14, rupees: 1165 },
-    ];
-
-    const pricingData3 = [
-      { plan: 'Basic', dollars: 13, rupees: 1080 },
-      { plan: 'Standard', dollars: 16, rupees: 1330 },
-      { plan: 'Premium', dollars: 19, rupees: 1580 },
-      { plan: 'Pro', dollars: 22, rupees: 1830},
-      { plan: 'Enterprise', dollars: 25, rupees: 2080 },
-    ];
-	const pricingData4 = [
-      { plan: 'Basic', dollars: 8, rupees: 665 },
-      { plan: 'Standard', dollars: 15, rupees: 1250 },
-      { plan: 'Premium', dollars: 20, rupees: 1665 },
-      { plan: 'Pro', dollars: 25, rupees: 2080},
-      { plan: 'Enterprise', dollars: 30, rupees: 2500 },
-    ];
-
-
-    function toggleCurrency() {
-      const toggleSwitch = document.getElementById('currencyToggle');
-
-      [pricingData1, pricingData2,pricingData3,pricingData4].forEach((pricingData, containerIndex) => {
-        const containerId = `priceContainer${containerIndex + 1}`;
-        const priceContainer = document.getElementById(containerId);
-        const currency = toggleSwitch.checked ? 'rupees' : 'dollars';
-
-        priceContainer.innerHTML = ""; // Clear previous content
-
-        pricingData.forEach(item => {
-          const price = item[currency];
-          const planElement = document.createElement('p');
-          planElement.textContent = `${item.plan}: ${price} ${currency.toUpperCase()}`;
-          priceContainer.appendChild(planElement);
-        });
-      });
-    }
-
-    // Initial load for both containers
-    toggleCurrency();
-  </script>
-  </section>
-   <footer id="contact">
-    <p>Contact us at: your@email.com | Phone: +123456789</p>
-  </footer>
 </body>
 </html>
